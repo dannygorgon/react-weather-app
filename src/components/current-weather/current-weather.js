@@ -10,7 +10,7 @@ const CurrentWeather = ({data}) => {
           <p className="city">{city}</p>
           <p className="weather-description">{weather[0].description}</p>
         </div>
-        <img className="weather-icon" src="icons/09d.png" alt="" />
+        <img className="weather-icon" src={`icons/${weather[0].icon}.png`} alt="" />
       </div>
       <div className="bottom">
         <p className="temperature">{main.temp.toFixed(1)}°C</p>
